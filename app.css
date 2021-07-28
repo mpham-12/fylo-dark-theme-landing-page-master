@@ -1,0 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    background-color: hsl(218, 28%, 13%);
+    background-image: url(images/bg-curvy-mobile.svg);
+    color: white;
+}
