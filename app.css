@@ -1,11 +1,432 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 html {
     box-sizing: border-box;
+  
+    background-color: hsl(218, 28%, 13%);
+
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
-    background-color: hsl(218, 28%, 13%);
-    background-image: url(images/bg-curvy-mobile.svg);
+    background-color: hsl(217, 28%, 15%);
     color: white;
+    align-items: center;
+
+   text-align: center;
+   background-image: url(images/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 400%;
+    background-position: -680px 410px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+header {
+   display: flex;
+   justify-content: space-between;
+   padding: 40px 30px 0px;
+}
+
+.nav-bar li{
+    font-size: 15px;
+    font-weight: 300;
+    display: inline-block;
+    position: relative;
+    top: 8px;
+}
+
+.fylo-logo {
+    height: auto;
+    width: 100px;
+cursor: pointer;
+} 
+.nav-1 {
+   padding: 30px 20px 0px 0px;
+  
+}
+.nav-2 {
+   padding: 30px 20px 0px 0px;
+  
+}
+.nav-3 {
+   padding: 30px 0px 0px 0px;
+  
+}
+.card-1 {
+    padding: 100px 20px 30px;
+    margin: 40px 20px;
+}
+.card-1-image {
+    height: auto;
+    width: 300px;
+ 
+}
+.card-3-image {
+    height: auto;
+    width: 300px;
+}
+
+.heading-1 {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 20px 0px;
+    line-height: 35px;
+}
+
+p {
+    line-height: 30px;
+    font-size: 14px;
+}
+.get-started {
+    border: 1px solid hsl(176, 68%, 64%);
+    background-color: hsl(176, 68%, 64%);
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 10px 60px;
+    margin-top: 40px;
+}
+.card-2 {
+    background-color: hsl(218, 28%, 13%)
+}
+.c2-p1 {
+    padding: 40px 30px;
+    line-height: 30px;
+}
+.c2-p2 {
+    padding: 40px 30px;
+    line-height: 30px;
+}
+.c2-p3 {
+    padding: 40px 30px;
+    line-height: 30px;
+}
+.c2-p4 {
+    padding: 40px 30px;
+    line-height: 30px;
+}
+.card-3 {
+    background-color: hsl(218, 28%, 13%);
+    padding: 40px 30px 100px;
+    
+}
+
+.card-4 {
+    background-color: hsl(218, 28%, 13%)
+}
+.heading-6 {
+    padding-top: 50px;
+    text-align: left;
+}
+h2 {
+font-size: 20px;
+font-weight: 600;
+padding-bottom: 15px;
+}
+.see-how {
+    background-color: transparent;
+    color: hsl(176, 68%, 64%);
+    border: 1px solid transparent;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    padding: 0px 0px 8px;
+    margin-bottom: 50px;
+    float: left;
+}
+.text-6 {
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.text-7 {
+    padding-bottom: 15px;
+    text-align: left;
+}
+.arrow-image {
+    height: auto;
+    width: 20px;
+    position: relative;
+    top: 6px;
+    padding-left: 5px;
+}
+.c4-p1 {
+    background-color: hsl(219, 30%, 18%);
+    padding: 30px 40px;
+    margin: 0px 30px 30px;
+    border-radius: 12px;
+    text-align: left;
+    line-height: 30px;
+    height: 250px;
+}
+.c4-p2 {
+    background-color: hsl(219, 30%, 18%);
+    padding: 30px 40px;
+    margin: 30px;
+    border-radius: 12px;
+    text-align: left;
+    line-height: 30px;
+    height: 250px;
+}
+.c4-p3 {
+    background-color: hsl(219, 30%, 18%);
+    padding: 30px 40px;
+    margin: 30px;
+    border-radius: 12px;
+    text-align: left;
+    line-height: 30px;
+    height: 250px;
+}
+.ceo-image {
+    height: auto;
+    width: 60px;
+    border-radius: 50%;
+    padding: 20px 0px;
+}
+.credentials {
+    font-size: 12px;
+}
+.name {
+   font-weight: 700;
+}
+.profile {
+    position: relative;
+    left: 80px;
+    bottom: 90px;
+}
+.quotes-image {
+    height: auto;
+    width: 40px;
+float: left;
+position: relative;
+left: 50px;
+bottom: 20px;
+}
+.card-5 {
+    background-color: hsl(218, 32%, 15%);
+    padding: 30px 40px;
+    margin: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 30px;
+    height: 300px;
+    box-shadow: 2px 0px 5px 1px hsl(217, 33%, 8%);
+    position: relative;
+    top: 180px;
+}
+.email-input {
+    border-radius: 25px;
+    padding: 10px 40px;
+}
+.get-started-free {
+    border: 1px solid hsl(176, 68%, 64%);
+    background-color: hsl(176, 68%, 64%);
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 10px 40px;
+margin-top: 20px;
+}
+footer {
+    padding: 200px 40px 40px;
+    background: hsl(216, 53%, 9%);
+    text-align: left;
+}
+.fylo-footer {
+    position: relative;
+    bottom: 20px;
+    padding: 30px 0px;
+}
+.icon-text {
+    position: relative;
+    left: 35px;
+    bottom: 28px;
+}
+.footer-links-1 {
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    margin: 50px 0px 30px;
+}
+.footer-links-2 {
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+}
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px 65px 0px;
+    max-width: 300px;
+}
+.sm-icon {
+    height: auto;
+    width: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    justify-content: space-between;
+}
+
+@media (min-width:600px) {
+    body {
+        background-image: url(images/bg-curvy-desktop.svg);
+      background-size: 1000px 500px;
+    background-position: 40px 350px;    
+
+    }
+.fylo-logo{
+    width: 150px;
+}
+    .card-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      padding: 20px 50px 50px;
+      margin: 0px 50px;  
+     
+    }
+    .heading-1 {
+        
+        font-size: 40px;
+        width: 800px;
+        justify-items: center;
+        line-height: 50px;
+    }
+    .text-1 {
+        font-size: 20px;
+        width: 600px;
+    }
+    .card-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0px 80px;
+        
+    }
+    .c2-p1 {
+       padding: 40px 100px;  
+    }
+ 
+    .c2-p2 {
+        padding: 40px 100px;
+        
+    }
+    .c2-p3 {
+        padding: 40px 100px;
+       
+    }
+    .c2-p4 {
+        padding: 40px 100px;    
+    }
+    .text-2 {
+        padding: 0px 30px;
+    }
+    .text-3 {
+        padding: 0px 30px;
+    }
+    .text-4 {
+        padding: 0px 30px;
+    }
+    .text-5 {
+        padding: 0px 30px;
+}
+.card-3 {
+    display: flex;
+    padding: 20px 50px 100px;
+}
+.card-3-image {
+    padding-left: 50px;
+    width: 500px;
+}
+.c3-right {
+    padding-left: 100px;
+    width: 500px;
+}
+.heading-6 {
+    font-size: 40px;
+}
+.testimonies {
+    display:flex ;
+    flex-direction: row;
+}
+.quotes-image {
+    height: 40px;
+    width: auto;
+    position: relative;
+left: 80px;
+top: 0px;
+}
+
+.c4-p1 {
+    margin-top: 30px;
+}
+.c4-p2 {
+    margin-top: 30px;
+    
+}
+.c4-p3 {
+    margin-top: 30px; 
+}
+.quotes {
+    width: 270px;
+}
+.card-5 {
+    width: 600px;
+    height: 180px;
+    margin-left: 350px;
+}
+.email-input {
+    width: 200px;
+}
+
 }
