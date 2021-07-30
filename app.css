@@ -136,24 +136,30 @@ p {
     margin-top: 40px;
 }
 .card-2 {
+
     background-color: hsl(218, 28%, 13%)
 }
 .c2-p1 {
+  
     padding: 40px 30px;
     line-height: 30px;
 }
 .c2-p2 {
+   
     padding: 40px 30px;
     line-height: 30px;
 }
 .c2-p3 {
+ 
     padding: 40px 30px;
     line-height: 30px;
 }
 .c2-p4 {
+  
     padding: 40px 30px;
     line-height: 30px;
 }
+
 .card-3 {
     background-color: hsl(218, 28%, 13%);
     padding: 40px 30px 100px;
@@ -204,7 +210,7 @@ padding-bottom: 15px;
     border-radius: 12px;
     text-align: left;
     line-height: 30px;
-    height: 250px;
+    
 }
 .c4-p2 {
     background-color: hsl(219, 30%, 18%);
@@ -213,7 +219,7 @@ padding-bottom: 15px;
     border-radius: 12px;
     text-align: left;
     line-height: 30px;
-    height: 250px;
+  
 }
 .c4-p3 {
     background-color: hsl(219, 30%, 18%);
@@ -222,13 +228,15 @@ padding-bottom: 15px;
     border-radius: 12px;
     text-align: left;
     line-height: 30px;
-    height: 250px;
+   
 }
 .ceo-image {
     height: auto;
-    width: 60px;
+    width: 50px;
     border-radius: 50%;
-    padding: 20px 0px;
+   position: relative;
+   top: 5px;
+   left: -5px;
 }
 .credentials {
     font-size: 12px;
@@ -237,9 +245,7 @@ padding-bottom: 15px;
    font-weight: 700;
 }
 .profile {
-    position: relative;
-    left: 80px;
-    bottom: 90px;
+    display: inline-block;
 }
 .quotes-image {
     height: auto;
@@ -256,7 +262,6 @@ bottom: 20px;
     border-radius: 12px;
     text-align: center;
     line-height: 30px;
-    height: 300px;
     box-shadow: 2px 0px 5px 1px hsl(217, 33%, 8%);
     position: relative;
     top: 180px;
@@ -273,6 +278,7 @@ bottom: 20px;
     border-radius: 25px;
     padding: 10px 40px;
 margin-top: 20px;
+width: 230px;
 }
 footer {
     padding: 200px 40px 40px;
@@ -351,53 +357,64 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         padding: 0px 80px;
-        
+        justify-items: center;
+    
     }
     .c2-p1 {
-       padding: 40px 100px;  
+        order: 1;
     }
  
     .c2-p2 {
-        padding: 40px 100px;
-        
+        order: 2;
+      
     }
     .c2-p3 {
-        padding: 40px 100px;
-       
+        order: 3;
+  
     }
     .c2-p4 {
-        padding: 40px 100px;    
+        order: 4;
+     
     }
     .text-2 {
-        padding: 0px 30px;
+     width: 300px;
+     max-width: 100%;
+
     }
     .text-3 {
-        padding: 0px 30px;
+        width: 300px;
+        max-width: 100%;
+   
     }
     .text-4 {
-        padding: 0px 30px;
+        width: 300px;
+        max-width: 100%;
+   
     }
     .text-5 {
-        padding: 0px 30px;
+        width: 300px;
+        max-width: 100%;
+   
 }
 .card-3 {
     display: flex;
     padding: 20px 50px 100px;
+    justify-content: center;
+    max-width:100%;
 }
 .card-3-image {
+    display: flex;
     padding-left: 50px;
-    width: 500px;
+ height: auto;
+ max-width:100%;
+ width: 450px;
 }
 .c3-right {
-    padding-left: 100px;
+    padding-left: 30px;
     width: 500px;
 }
 .heading-6 {
-    font-size: 40px;
-}
-.testimonies {
-    display:flex ;
-    flex-direction: row;
+    font-size: 35px;
 }
 .quotes-image {
     height: 40px;
@@ -406,27 +423,113 @@ footer {
 left: 80px;
 top: 0px;
 }
-
+.quotes {
+    font-size: 14px;
+    min-width: 150px;
+    max-width: 250px;
+}
+.card-4 {
+  display: flex;
+   flex-direction: row;
+justify-content: center;
+ 
+}
 .c4-p1 {
-    margin-top: 30px;
+  margin: 30px 15px;
+
 }
 .c4-p2 {
-    margin-top: 30px;
+    margin: 30px 15px;
     
 }
 .c4-p3 {
-    margin-top: 30px; 
+    margin: 30px 15px;
+  
 }
-.quotes {
-    width: 270px;
+.container-5 {
+    justify-content: center;
 }
 .card-5 {
-    width: 600px;
-    height: 180px;
-    margin-left: 350px;
+    margin: 0px 300px;
+    min-width: 400px;
+    max-width: 100%;
+    position: relative;
+    top: 120px;
 }
+
 .email-input {
     width: 200px;
 }
 
+.text-7 {
+    text-align: left;
+}
+.heading-7 {
+    text-align: center;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(5 1fr);
+padding-bottom: 0px;
+}
+
+.fylo-footer{
+    grid-column: 1/2;
+   
+    padding: 50px 20px;
+}
+.location {
+    grid-column: 1/2;
+  margin: 0px 20px;
+    width: 300px;
+}
+.phone {
+    grid-column: 2/3;
+    margin: 0px 20px;
+}
+.email {
+    grid-column: 2/3;
+    position: relative;
+    bottom: 70px;
+    margin: 0px 20px;
+}
+.footer-links-1 {
+    grid-column: 3/4;
+    position: relative;
+    bottom: 120px;
+    margin: 0px 20px;
+}
+.footer-links-2 {
+    grid-column: 4/5;  
+    position: relative;
+    bottom: 120px;
+    margin: 0px 20px;
+}
+.social-media {
+    grid-column: 5/6;
+    margin-top: 0px;
+    position: relative;
+    bottom: 170px;
+    margin: 0px 20px;
+}
+a:hover {
+font-weight: 600;
+}
+.get-started:hover {
+background-color: rgb(156, 245, 245);
+cursor: pointer;
+}
+.get-started-free:hover {
+background-color: rgb(156, 245, 245);
+cursor: pointer;
+}
+
+.social-media:hover {
+cursor: pointer;
+}
+.see-how:hover {
+    color: rgb(156, 245, 245);
+    border-bottom: 1px solid rgb(156, 245, 245);
+}
 }
